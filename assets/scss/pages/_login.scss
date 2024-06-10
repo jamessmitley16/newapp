@@ -1,0 +1,130 @@
+//login ====	
+.account-box{
+	.section-head{
+		padding: 20px;
+		h2{
+			margin-bottom: 5px;	
+		}
+	}
+	.logo-area{
+		text-align: center;
+		max-width: 130px;
+		margin: 40px auto 20px;
+		.logo-dark{
+			display: block;
+		}
+		.logo-light{
+			display: none;
+		}
+	}
+}
+
+.account-area{
+	form{
+        display: flex;
+        flex-direction: column;
+        
+		.saprate{
+            display: flex;
+            flex: 1;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+.social-btn-group{
+    margin-bottom: auto;
+	display: flex;
+	justify-content: center; 
+	align-items: center;
+    white-space: nowrap;
+    .social-btn{
+		width: 50%;
+		height: 50px;
+		text-align: center;
+		border: 1px solid var(--border-color);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: var(--border-radius);
+        img{
+			width: 24px;
+        }
+    }    
+}
+
+.saprate{
+	position: relative;
+	display: inline-block;
+	color: var(--primary);
+	font-size: 0.875rem;
+	padding: 0 70px;
+    &:after{    
+		content: "";
+		position: absolute;
+		width: 50px;
+		height: 1px;
+		background-color: #E7E7E7;
+		top: 50%;
+		#{$dz-pos-left}: 0;
+		transform: translateY(-50%);
+    }
+    &:before{    
+		content: "";
+		position: absolute;
+		width: 50px;
+		height: 1px;
+		background-color: #E7E7E7;
+		top: 50%;
+		#{$dz-pos-right}: 0;
+		transform: translateY(-50%);
+    }
+}
+
+.input-group > .form-control:focus, .input-group > .form-select:focus{
+    z-index: unset;
+}
+.digit-group {
+	display: flex;
+	flex-direction: initial;
+	margin-bottom: 20px;
+	justify-content: center;
+	input {
+		margin: 0 8px;
+		text-align: center;
+		font-size: 18px;
+		color: var(--dark);
+		padding: 0;
+		width: 50px;
+		height: 50px;
+	}
+}
+
+.seprate-box{
+	display: flex;
+	align-items: center;
+	.back-btn{
+		margin-#{$dz-pos-right}: 15px;
+		width: 50px;
+		min-width: 50px;
+		height: 50px;
+		background-color: var(--rgba-primary-1);
+		border: 1px solid var(--border-color);
+		text-align: center;
+		color: var(--primary);
+		border-radius: var(--border-radius);
+		font-size: 26px;
+		svg{
+			path{
+				fill: var(--primary);
+			}
+		}
+	}
+}
+
+/* DEFULT CSS CLASS */
+.dz-flex-box{
+	display: flex !important;
+	align-items: center !important;
+	justify-content: center!important;
+}
